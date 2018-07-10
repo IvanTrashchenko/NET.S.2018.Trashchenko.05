@@ -368,7 +368,7 @@ namespace PolynomialLibrary
 
         object ICloneable.Clone() => this.Clone();
 
-        public Polynomial Clone() => new Polynomial(this.coefficients);
+        public Polynomial Clone() => new Polynomial(this.toArray());
 
         #endregion
 
